@@ -1,5 +1,5 @@
 # Please Work ROBOTC
-A quick guide on ROBOTC for ENGR-10 labs at SJSU.
+A quick guide on how to configure and troubleshoot ROBOTC for ENGR-10 labs at SJSU. This guide does not go over how to code using C and Natural Language PLTW.
 
 ## Table of Contents
 - [General Controller Knowledge](#general-controller-knowledge)
