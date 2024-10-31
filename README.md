@@ -59,7 +59,7 @@ Your controller's CPU is stuck in a bootloader loop. The original laptop which a
 1. Take the controller to a different laptop with ROBOTC.
 2. Ensure VEX 2.0 Cortex is the platform type
 3. Update the CPU Master Firmware again with the **battery on**.
-4. VEXnet LED will now be on, so ensure the Communication Mode is set to USB only. (Power cycling)[#power-cycling] may be needed to swap to USB Only mode.
+4. VEXnet LED will now be on, so ensure the Communication Mode is set to USB only. [Power cycling](#power-cycling) may be needed to swap to USB Only mode.
 
 </details>
 
