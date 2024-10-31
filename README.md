@@ -104,7 +104,7 @@ You can find the the debugging menu at the bottom of the window when the robot h
 The following sections are symptoms with their respective resolutions with successive steps if the previous solution didn't work.
 
 ### General Fix: Firmware and Power Cycling
-This only applies when ROBOT and GAME LEDs are green. This will fix most issues with the robot code not executing on the motors/sensors.
+This only applies when **ROBOT and GAME LEDs are green** when the battery is on. This will fix most issues with the robot code not executing on the motors/sensors.
 
 >[!WARNING]
 >Again, the battery must be **plugged in** and controller **turned on**.
