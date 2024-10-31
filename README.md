@@ -19,7 +19,7 @@ We have 3 LEDs on the Vex Cortex Controller which have different meanings \(from
 
 
 ### Power Cycling
-Power cycling helps reset the controller's operation modes as well being a general troubleshooting tool. To power cycle, see the instructions below:
+Power cycling helps reset the controller's operation modes as well being a general troubleshooting tool. To power cycle:
 
 1. Turn off the controller and remove the USB.
 2. After all controller LEDs are off, you may plug in the USB and turn on the controller.
