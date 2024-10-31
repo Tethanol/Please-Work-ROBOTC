@@ -32,6 +32,7 @@ Power cycling helps reset the controller's operation modes as well being a gener
 ROBOTC default Platform Type is Vex IQ, but it should be Vex 2.0 Cortex.
 
 Change it in `Robot > Platform Type > Vex Robotics > Vex 2.0 Cortex`.
+
 <img src="https://github.com/user-attachments/assets/3d529a47-8d94-40d2-9cea-f56b53d2fbe6">
 
 ### Update Controller Firmwares
@@ -50,6 +51,7 @@ To update the controller firmware, select `Firmware Download`.
 We must also update the Master CPU Firmware. **THE BATTERY MUST BE PLUGGED IN AND TURNED ON!**
 
 To update this, go to `Robot > Download Firmware > Manually Update Firmware > Master CPU Firmware > Standard File`.
+
 <img width="811" alt="{DD1CD064-A63A-436E-9B3B-0623BE3078C6}" src="https://github.com/user-attachments/assets/2e92c14c-3d0b-4617-9b0e-db3744ee0a96">
 
 <details><summary><b> What to do if CPU Master Firmware update fails</b></summary>
