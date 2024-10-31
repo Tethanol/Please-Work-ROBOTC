@@ -53,13 +53,13 @@ We must also update the Master CPU Firmware. **THE BATTERY MUST BE PLUGGED IN AN
 To update this, go to `Robot > Download Firmware > Manually Update Firmware > Master CPU Firmware > Standard File`.
 
 <img width="811" alt="{DD1CD064-A63A-436E-9B3B-0623BE3078C6}" src="https://github.com/user-attachments/assets/2e92c14c-3d0b-4617-9b0e-db3744ee0a96">
-
+<p></p>
 <details><summary><b> What to do if CPU Master Firmware update fails</b></summary>
 
 Your controller's CPU is stuck in a bootloader loop. You can recognize it is stuck in this state if the GAME LED on the controller is flashing at a consistent rapid pace. The original laptop which attempted to download the code will not recognize the controller COM port until the CPU is fixed. To fix this you must:
 
 1. Take the controller to a different laptop with ROBOTC.
-2. Ensure VEX 2.0 Cortex is the platform type
+2. Ensure VEX 2.0 Cortex is the platform type.
 3. Update the CPU Master Firmware again with the **battery on**.
 4. VEXnet LED will now be on, so ensure the Communication Mode is set to USB only. [Power cycling](#power-cycling) may be needed to swap to USB Only mode.
 
@@ -72,7 +72,7 @@ ROBOTC defaults to dual USB/VEXnet functionality. This causes some errors with t
 Change it to USB Only through `Robot > Vex Cortex Communication Mode > USB Only`.
 
 <img src="https://github.com/user-attachments/assets/c59b8bc1-d92a-4b81-9c54-412057a2705f">
-
+<p></p>
 >[!IMPORTANT]
 >When you download the code for the first time, it may ask to [power cycle](#power-cycling) your controller.
 
@@ -93,7 +93,7 @@ Set it in `Robot > Platform Type > Natural Language PLTW`.
 To effectively figure out what is wrong with the robot, we must use debugging windows. To access these windows,
 
 1. Download code to robot.
-2. Go to `Robot > Debugger Windows` and enable the following: `Global/Local Variables, Motors, Sensors`
+2. Go to `Robot > Debugger Windows` and enable the following: `Global/Local Variables, Motors, Sensors`.
 
    ![image](https://github.com/user-attachments/assets/5fce1f0c-d1e7-45d6-8992-34932972c8dd)
 
