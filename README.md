@@ -73,6 +73,7 @@ Change it to USB Only through `Robot > Vex Cortex Communication Mode > USB Only`
 
 <img src="https://github.com/user-attachments/assets/c59b8bc1-d92a-4b81-9c54-412057a2705f">
 <p></p>
+
 >[!IMPORTANT]
 >When you download the code for the first time, it may ask to [power cycle](#power-cycling) your controller.
 
