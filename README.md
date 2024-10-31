@@ -68,6 +68,7 @@ Your controller's CPU is stuck in a bootloader loop. You can recognize it is stu
 ROBOTC defaults to dual USB/VEXnet functionality. This causes some errors with the robot not running when USB is not connected to the controller.
 
 Change it to USB Only through `Robot > Vex Cortex Communication Mode > USB Only`.
+
 <img src="https://github.com/user-attachments/assets/c59b8bc1-d92a-4b81-9c54-412057a2705f">
 
 >[!IMPORTANT]
@@ -77,6 +78,7 @@ Change it to USB Only through `Robot > Vex Cortex Communication Mode > USB Only`
 Natural Language is ROBOTC's method of introducing additional functions for the user which may commonly be used and coded in a different matter. Youseffi calls for the use of Natural Language PLTW as Natural Language 2.0 _removes base functions_ important to gotobeacon.c.
 
 Set it in `Robot > Platform Type > Natural Language PLTW`.
+
 <img src="https://github.com/user-attachments/assets/f627f365-55df-4bd1-b12e-556fb9a8b112">
 
 
@@ -90,8 +92,11 @@ To effectively figure out what is wrong with the robot, we must use debugging wi
 
 1. Download code to robot.
 2. Go to `Robot > Debugger Windows` and enable the following: `Global/Local Variables, Motors, Sensors`
+
    ![image](https://github.com/user-attachments/assets/5fce1f0c-d1e7-45d6-8992-34932972c8dd)
 
+
+You can find the the debugging menu at the bottom of the window when the robot has downloaded the program.
 
 >[!NOTE]
 >Debugging windows will only display values when the robot is plugged in.
