@@ -39,7 +39,7 @@ Change it in `Robot > Platform Type > Vex Robotics > Vex 2.0 Cortex`.
 >Failure to update the controller and CPU firmware may result in **fire or burning of the controller** when operating the motors. **Update before running code!**
 
 >[!WARNING]
->The battery must be **plugged in** and **controller turned on**, or the CPU will get stuck in a bootloader loop.
+>The battery must be **plugged in** and **controller turned on**, or the CPU will get stuck in a bootloader loop when attempting to update.
 
 Most of these controllers are running EasyC-era Cortex firmware, which is older than the ROBOTC Cortex firmware used for the program. Most controllers should pick up on the outdated firmware and prompt the user to update the controller.
 
