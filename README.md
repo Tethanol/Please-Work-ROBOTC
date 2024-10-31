@@ -123,7 +123,7 @@ Check the debug menu:
 
 <details><summary><b> Code Debugging</b></summary>
 
-1. Check ports are defined.
+1. Check ports are defined. There must be **no text/comments before the pragma**.
 2. There may be issues with Natural Language PLTW, especially for the motor. Try not to use PLTW when setting motor values. Recommend `motor[portX] = Y;` where X is a defined motor port, and Y is a value between -127 and 127.
 
 </details>
