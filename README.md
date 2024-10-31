@@ -2,27 +2,31 @@
 A quick guide on ROBOTC for ENGR-10 labs at SJSU.
 
 ## Table of Contents
-- [General Controller Knowledge](#general-controller-knowledge
-- [Downloading ROBOTC](#downloading-robotc)
+- [General Controller Knowledge](#general-controller-knowledge)
 - [Configuing ROBOTC for the First Time](#configuring-robotc-for-the-first-time)
 - [Troubleshooting](#troubleshooting)
 
-## Downloading ROBOTC
+
 
 ## General Controller Knowledge
 
 ### Controller LEDs
 We have 3 LEDs on the Vex Cortex Controller which have different meanings \(from top to bottom)
-- ROBOT: Green = Battery on; Red = Battery off
-- VEXnet: This should not be on for our robot project.
-- GAME: Green = Robot is operational (Not always true)
+
+- **ROBOT:** Green = Battery on; Red = Battery off
+- **VEXnet:** This should not be on for our robot project.
+- **GAME:** Green = Robot is operational (Not always true)
+
 
 ### Power Cycling
+Power cycling helps reset the controller's operation modes as well being a general troubleshooting tool. To power cycle, see the instructions below:
+
+1. Turn off the controller and remove the USB.
+2. After all controller LEDs are off you may plug in the USB and turn on the controller.
 
 
 
 ## Configuring ROBOTC for the first time
-
 
 ### Change Platform Type to Vex 2.0 Cortex
 ROBOTC default Platform Type is Vex IQ, but it should be Vex 2.0 Cortex.
@@ -30,28 +34,12 @@ ROBOTC default Platform Type is Vex IQ, but it should be Vex 2.0 Cortex.
 Change it in `Robot > Platform Type > Vex Robotics > Vex 2.0 Cortex`.
 <img src="https://github.com/user-attachments/assets/3d529a47-8d94-40d2-9cea-f56b53d2fbe6">
 
-### Change Communication Mode
-ROBOTC defaults to dual USB/VEXnet functionality. This causes some errors with the robot not running when USB is not connected to the controller.
-
-Change it to USB Only through `Robot > Vex Cortex Communication Mode > USB Only`
-<img src="https://github.com/user-attachments/assets/c59b8bc1-d92a-4b81-9c54-412057a2705f">
-
->[!IMPORTANT]
->When you download the code for the first time, it may ask to power cycle your controller. Turn off the controller and remove the USB. After all controller LEDs are off, you may plug in the USB and turn on the controller. You may then build the code after power cycling.
-
-### Set Natural Language as PLTW
-Natural Language is ROBOTC's method of introducing additional functions for the user which may commonly be used and coded in a different matter. Youseffi calls for the use of Natural Language PLTW as Natural Language 2.0 _removes base functions_ important to gotobeacon.c.
-
-Set it in `Robot > Platform Type > Natural Language PLTW`
-<img src="https://github.com/user-attachments/assets/f627f365-55df-4bd1-b12e-556fb9a8b112">
-
-
-### Update ROBOTC Firmware
+### Update Controller Firmwares
 >[!CAUTION]
 >Failure to update the controller and CPU firmware may result in **fire or burning of the controller** when operating the motors. **Update before running code!**
 
 >[!WARNING]
->The battery must be plugged in and controller must be turned on, or the CPU will stuck in a bootloader loop.
+>The battery must be **plugged in** and **controller turned on**, or the CPU will stuck in a bootloader loop.
 
 Most of these controller are running EasyC-era Cortex firmware, which is older than the ROBOTC Cortex firmware used for the program. Most controllers should pick up on the outdated firmware and prompt the user to update the controller.
 
@@ -71,10 +59,27 @@ Your controller's CPU is stuck in a bootloader loop. The original laptop which a
 1. Take the controller to a different laptop with ROBOTC.
 2. Ensure VEX 2.0 Cortex is the platform type
 3. Update the CPU Master Firmware again with the **battery on**.
-4. VEXnet LED will now be on, so ensure the Communication Mode is set to USB only. (Power cycling)[] may be needed to 
-
+4. VEXnet LED will now be on, so ensure the Communication Mode is set to USB only. (Power cycling)[#power-cycling] may be needed to swap to USB Only mode.
 
 </details>
+
+
+### Change Communication Mode
+ROBOTC defaults to dual USB/VEXnet functionality. This causes some errors with the robot not running when USB is not connected to the controller.
+
+Change it to USB Only through `Robot > Vex Cortex Communication Mode > USB Only`
+<img src="https://github.com/user-attachments/assets/c59b8bc1-d92a-4b81-9c54-412057a2705f">
+
+>[!IMPORTANT]
+>When you download the code for the first time, it may ask to power cycle your controller.
+
+### Set Natural Language as PLTW
+Natural Language is ROBOTC's method of introducing additional functions for the user which may commonly be used and coded in a different matter. Youseffi calls for the use of Natural Language PLTW as Natural Language 2.0 _removes base functions_ important to gotobeacon.c.
+
+Set it in `Robot > Platform Type > Natural Language PLTW`
+<img src="https://github.com/user-attachments/assets/f627f365-55df-4bd1-b12e-556fb9a8b112">
+
+
 
 ## Troubleshooting
 >[!IMPORTANT]
@@ -94,7 +99,13 @@ To effectively figure out what is wrong with the robot, we must use debugging wi
 The following sections are symptoms with their respective resolutions with successive steps if the previous solution didn't work.
 
 ### General Fix: Firmware and Power Cycling
-This only applies when ROBOT and GAME LEDs are green.
+This only applies when ROBOT and GAME LEDs are green. This will fix most issues with the robot code not executing on the motors/sensors.
+
+>[!WARNING]
+>Again, the battery must be **plugged in** and controller **turned on**.
+
+1. [Update/Reinstall the firmwares on the controller](#update-controller-firmwares)
+2. [Power cycle] the controller to set it back to USB Only mode.
 
 
 ### Debug window indicates change in variable/motors/sensor value, but no change is observed
@@ -111,7 +122,7 @@ Check the debug menu:
 
 <details><summary><b> Controller Debugging</b></summary>
                                                 
-1. Power cycle the controller. Turn off the controller and remove the USB. After all controller LEDs are off, you may plug in the USB and turn on the controller. You may then build the code after power cycling.
+1. [Power cycle](#power-cycling) the controller.
 2. Try different ports.
 3. Change the controller.
 
@@ -133,7 +144,12 @@ Usually an issue with the battery/controller terminals.
 ### Controller VEXnet and GAME LEDs are flashing orange
 ROBOTC defaults to dual USB/VEXnet functionality. This causes the controller not to run code unless connected to USB.
 
-Change the communication mode to `Robot > Vex Cortex Communication Mode > USB Only`
+Change the communication mode to `Robot > Vex Cortex Communication Mode > USB Only`.
 
 <img src="https://github.com/user-attachments/assets/c59b8bc1-d92a-4b81-9c54-412057a2705f">
 
+
+### Controller not recognized by computer
+1. Change the USB cable.
+2. Change the laptop.
+3. Change the controller.
