@@ -56,7 +56,7 @@ To update this, go to `Robot > Download Firmware > Manually Update Firmware > Ma
 <p></p>
 <details><summary><b> What to do if CPU Master Firmware update fails</b></summary>
 
-Your controller's CPU is stuck in a bootloader loop. You can recognize it is stuck in this state if the GAME LED on the controller is flashing at a consistent rapid pace. The original laptop which attempted to download the code will not recognize the controller COM port until the CPU is fixed. To fix this you must:
+Your controller is stuck in a bootloader loop. You can recognize it is stuck in this state if the GAME LED on the controller is flashing rapidly. The original laptop which attempted to download the code (generally) will not recognize the controller COM port until the CPU is fixed. To fix this you must:
 
 1. Take the controller to a different laptop with ROBOTC.
 2. Ensure VEX 2.0 Cortex is the platform type.
@@ -88,7 +88,7 @@ Set it in `Robot > Platform Type > Natural Language PLTW`.
 
 ## Troubleshooting
 >[!IMPORTANT]
->If you encounter any issue that is not listed in the troubleshooting section, or the solutions do not work, contact me at ethan.thanh@sjsu.edu so I can hopefully find a solution other than get a new XYZ part.
+>If you encounter any issue that is not listed in the troubleshooting section, or the solutions do not work, contact me at ethan.thanh@sjsu.edu so I can find a solution other than get a new XYZ part.
 
 
 To effectively figure out what is wrong with the robot, we must use debugging windows. To access these windows,
