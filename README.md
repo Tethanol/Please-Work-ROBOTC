@@ -3,7 +3,7 @@ A quick guide on how to configure and troubleshoot ROBOTC for ENGR-10 labs at SJ
 
 ## Table of Contents
 - [General Controller Knowledge](#general-controller-knowledge)
-- [Configuing ROBOTC for the First Time](#configuring-robotc-for-the-first-time)
+- [Configuring ROBOTC for the First Time](#configuring-robotc-for-the-first-time)
 - [Troubleshooting](#troubleshooting)
 
 
